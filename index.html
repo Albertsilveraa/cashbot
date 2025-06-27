@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inti Cash Bot - Tu Caja Registradora Inteligente</title>
+    <meta name="description" content="El bot de Telegram más fácil de usar para manejar tu negocio. Registra ventas, controla empleados, gestiona catálogo y genera reportes profesionales automáticamente.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzY2NjZGRiIvPgo8cGF0aCBkPSJNOCAxMkg4LjAxTTI0IDEySDI0LjAxTTggMTZIOC4wMU0yNCAxNkgyNC4wMU0xMiAyMEgxMi4wMU0yMCAyMEgyMC4wMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <span class="brand-text">Inti Cash Bot</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+                <a href="#como-usar" class="nav-link">Cómo Usar</a>
+                <a href="#reportes" class="nav-link">Reportes</a>
+                <!--<a href="#instalacion" class="nav-link">Instalación</a>-->
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-sparkles"></i>
+                        <span>Con Inteligencia Artificial</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Inti Cash Bot</span><br>
+                        Tu Caja Registradora<br>
+                        <span class="highlight">Inteligente</span>
+                    </h1>
+                    <p class="hero-description">
+                        Olvídate de cuadernos y calculadoras. El bot de Telegram más fácil 
+                        de usar para manejar tu negocio completo. Registra ventas, controla 
+                        empleados, gestiona tu catálogo y genera reportes profesionales.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Solicitar Demo
+                        </a>
+                        <a href="#funcionalidades" class="btn btn-secondary">
+                            <i class="fas fa-magic"></i>
+                            Ver Funcionalidades
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Disponible</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Automático</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">IA</div>
+                            <div class="stat-label">Potenciado</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <!-- Phone Screen -->
+                            <div class="phone-screen">
+                                <!-- Status Bar -->
+                                <div class="status-bar">
+                                    <div class="status-left">
+                                        <span class="time">9:41</span>
+                                    </div>
+                                    <div class="status-right">
+                                        <div class="signal-bars">
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                        </div>
+                                        <i class="fas fa-wifi wifi-icon"></i>
+                                        <div class="battery">
+                                            <div class="battery-fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Chat Interface -->
+                                <div class="chat-interface">
+                                    <!-- Chat Header -->
+                                    <div class="chat-header">
+                                        <div class="header-left">
+                                            <button class="back-btn">
+                                                <i class="fas fa-arrow-left"></i>
+                                            </button>
+                                            <div class="bot-avatar">
+                                                <i class="fas fa-robot"></i>
+                                                <div class="online-indicator"></div>
+                                            </div>
+                                        </div>
+                                        <div class="bot-info">
+                                            <div class="bot-name">Inti Bot 🤖</div>
+                                            <div class="bot-status">
+                                                <span class="status-dot"></span>
+                                                En línea • Procesando con IA
+                                            </div>
+                                        </div>
+                                        <div class="header-actions">
+                                            <button class="header-btn">
+                                                <i class="fas fa-video"></i>
+                                            </button>
+                                            <button class="header-btn">
+                                                <i class="fas fa-phone"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Chat Messages -->
+                                    <div class="chat-messages" id="phone-chat-messages">
+                                        <!-- Date separator -->
+                                        <div class="date-separator">
+                                            <span>Hoy</span>
+                                        </div>
+                                        
+                                        <!-- Welcome message -->
+                                        <div class="message bot-message">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="message-content">
+                                                <div class="message-bubble">
+                                                    <div class="message-header">
+                                                        <span class="sender-name">Inti Bot</span>
+                                                    </div>
+                                                    ¡Hola! 👋 Soy tu asistente de caja inteligente.
+                                                    <br><br>
+                                                    Puedo ayudarte a:
+                                                    <br>• 💰 Registrar ventas y gastos
+                                                    <br>• 📱 Analizar capturas Yape/Plin
+                                                    <br>• 🎤 Entender comandos de voz
+                                                    <br>• 📊 Generar reportes automáticos
+                                                </div>
+                                                <div class="message-time">9:15 AM ✓✓</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- User voice message -->
+                                        <div class="message user-message">
+                                            <div class="message-content">
+                                                <div class="message-bubble voice-message">
+                                                    <div class="voice-player">
+                                                        <button class="play-btn" onclick="playVoiceInPhone()">
+                                                            <i class="fas fa-play"></i>
+                                                        </button>
+                                                        <div class="voice-waveform">
+                                                            <div class="wave-bar"></div>
+                                                            <div class="wave-bar"></div>
+                                                            <div class="wave-bar"></div>
+                                                            <div class="wave-bar"></div>
+                                                            <div class="wave-bar"></div>
+                                                            <div class="wave-bar"></div>
+                                                        </div>
+                                                        <span class="voice-duration">0:04</span>
+                                                    </div>
+                                                </div>
+                                                <div class="message-time">9:16 AM</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Bot processing voice -->
+                                        <div class="message bot-message">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="message-content">
+                                                <div class="message-bubble">
+                                                    🎤 <strong>Escuché:</strong> "Vendí 3 empanadas por 15 soles"
+                                                    <br><br>
+                                                    ✅ <strong>Venta registrada:</strong>
+                                                    <div class="sale-summary">
+                                                        <div class="summary-row">
+                                                            <span class="label">Producto:</span>
+                                                            <span class="value">3 empanadas</span>
+                                                        </div>
+                                                        <div class="summary-row">
+                                                            <span class="label">Total:</span>
+                                                            <span class="value amount">S/ 15.00</span>
+                                                        </div>
+                                                        <div class="summary-row">
+                                                            <span class="label">Método:</span>
+                                                            <span class="value">💵 Efectivo</span>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    💰 <strong>Balance hoy:</strong> +S/ 15.00
+                                                </div>
+                                                <div class="message-time">9:16 AM ✓✓</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- User sends image -->
+                                        <div class="message user-message">
+                                            <div class="message-content">
+                                                <div class="message-bubble image-message">
+                                                    <div class="yape-screenshot">
+                                                        <div class="yape-header-img">
+                                                            <span class="yape-logo">Yape</span>
+                                                            <i class="fas fa-check-circle"></i>
+                                                        </div>
+                                                        <div class="yape-content">
+                                                            <div class="yape-amount-big">S/ 25.00</div>
+                                                            <div class="yape-status-text">¡Yapeo exitoso!</div>
+                                                            <div class="yape-recipient">Para: Mi Bodega</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="message-time">9:17 AM</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Bot analyzing image -->
+                                        <div class="message bot-message">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="message-content">
+                                                <div class="message-bubble">
+                                                    🔍 <strong>Analizando con GPT-4 Vision...</strong>
+                                                    <br><br>
+                                                    ✅ <strong>Pago Yape detectado:</strong>
+                                                    <div class="payment-card">
+                                                        <div class="payment-icon">📱</div>
+                                                        <div class="payment-details">
+                                                            <div class="payment-amount">S/ 25.00</div>
+                                                            <div class="payment-method">Yape • Confirmado</div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    💰 <strong>Balance hoy:</strong> +S/ 40.00
+                                                </div>
+                                                <div class="message-time">9:17 AM ✓✓</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Typing indicator -->
+                                        <div class="typing-indicator" id="typing-indicator">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="typing-bubble">
+                                                <div class="typing-dots">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Chat Input -->
+                                    <div class="chat-input">
+                                        <button class="attachment-btn">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                        <div class="input-container">
+                                            <input type="text" placeholder="Escribe un mensaje..." id="phone-input">
+                                            <button class="emoji-btn">
+                                                <i class="far fa-smile"></i>
+                                            </button>
+                                        </div>
+                                        <button class="voice-btn recording" onclick="togglePhoneVoice()">
+                                            <i class="fas fa-microphone"></i>
+                                        </button>
+                                        <button class="send-btn" onclick="sendPhoneMessage()">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Phone Glow Effect -->
+                        <div class="phone-glow"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="floating-elements">
+                <div class="floating-icon"><i class="fas fa-cash-register"></i></div>
+                <div class="floating-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="floating-icon"><i class="fas fa-file-pdf"></i></div>
+                <div class="floating-icon"><i class="fas fa-microphone"></i></div>
+                <div class="floating-icon"><i class="fas fa-camera"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="funcionalidades" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="gradient-text">¿Qué puede hacer</span> Inti por tu negocio?
+                </h2>
+                <p class="section-description">
+                    Una caja registradora completa en Telegram, perfecta para negocios familiares que quieren crecer ordenadamente
+                </p>
+                
+                <!-- Feature Categories Filter -->
+                <div class="feature-filters">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fas fa-th"></i>
+                        Todas
+                    </button>
+                    <button class="filter-btn" data-category="money">
+                        <i class="fas fa-wallet"></i>
+                        Manejo de Dinero
+                    </button>
+                    <button class="filter-btn" data-category="employees">
+                        <i class="fas fa-users"></i>
+                        Empleados
+                    </button>
+                    <button class="filter-btn" data-category="catalog">
+                        <i class="fas fa-tags"></i>
+                        Catálogo
+                    </button>
+                    <button class="filter-btn" data-category="control">
+                        <i class="fas fa-search"></i>
+                        Control y Errores
+                    </button>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <!-- Manejo de Dinero -->
+                <div class="feature-card interactive-card" data-category="money" data-demo="voice">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h4>💰 Maneja tu dinero sin complicaciones</h4>
+                    <p>Registra ventas diciéndole "vendí una hamburguesa", controla gastos y ve tu balance en tiempo real</p>
+                    <div class="feature-demo">
+                        <button class="demo-btn" onclick="playVoiceDemo()">
+                            <i class="fas fa-play"></i>
+                            Ver Comandos
+                        </button>
+                        <div class="demo-content" id="voice-demo" style="display: none;">
+                            <div class="demo-examples">
+                                <div class="example">💬 "Vendí una hamburguesa"</div>
+                                <div class="example">💬 "Gasté 50 soles en ingredientes"</div>
+                                <div class="example">💬 "¿Cuánto llevo hoy?"</div>
+                            </div>
+                            <div class="demo-result">
+                                ✅ Todo registrado automáticamente
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card interactive-card" data-category="employees">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>👥 Perfecto para negocios familiares</h4>
+                    <p>Agrega empleados, ve quién vendió qué, mantén control total como dueño del negocio</p>
+                    <div class="employee-features">
+                        <div class="feature-item">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Agregar empleados fácilmente</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Ve quién vendió qué</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-crown"></i>
+                            <span>Control total como dueño</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Empleados ven solo sus ventas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card interactive-card" data-category="catalog">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h4>📊 Catálogo inteligente</h4>
+                    <p>Agrega productos fácilmente, actualiza precios masivamente, el bot recuerda todo para ventas más rápidas</p>
+                    <div class="catalog-features">
+                        <div class="feature-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">∞</span>
+                                <span class="stat-label">Productos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">Excel</span>
+                                <span class="stat-label">Actualizaciones</span>
+                            </div>
+                        </div>
+                        <div class="feature-badges">
+                            <span class="feature-badge">Precios automáticos</span>
+                            <span class="feature-badge">Búsqueda inteligente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card interactive-card" data-category="control">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>🔍 Encuentra y corrige errores fácilmente</h4>
+                    <p>Busca ventas, modifica montos si te equivocaste, elimina registros erróneos con confirmación</p>
+                    <div class="control-features">
+                        <div class="security-item">
+                            <i class="fas fa-search"></i>
+                            <span>Buscar cualquier venta</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Modificar montos</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-trash-alt"></i>
+                            <span>Eliminar ventas erróneas</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Todo con confirmación</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card interactive-card" data-category="money" data-demo="pdf">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h4>📄 Reportes profesionales automáticos</h4>
+                    <p>PDFs con logo de tu empresa, balance diario, ventas por empleado y métodos de pago</p>
+                    <div class="feature-demo">
+                        <button class="demo-btn" onclick="previewPDF()">
+                            <i class="fas fa-eye"></i>
+                            Preview PDF
+                        </button>
+                        <div class="pdf-preview-mini">
+                            <div class="pdf-page-mini">
+                                <div class="pdf-header">TU NEGOCIO</div>
+                                <div class="pdf-content">
+                                    <div class="pdf-line"></div>
+                                    <div class="pdf-line"></div>
+                                    <div class="pdf-line short"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card interactive-card" data-category="money">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>📱 Control total desde tu celular</h4>
+                    <p>Funciona 24/7 desde cualquier lugar, múltiples usuarios, historial completo y búsqueda inteligente</p>
+                    <div class="mobile-features">
+                        <div class="feature-chart">
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="height: 80%;"></div>
+                                <div class="chart-bar" style="height: 60%;"></div>
+                                <div class="chart-bar" style="height: 90%;"></div>
+                                <div class="chart-bar" style="height: 45%;"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <span>24/7</span><span>Multi</span><span>Hist</span><span>IA</span>
+                            </div>
+                        </div>
+                        <div class="feature-badges">
+                            <span class="feature-badge">Siempre disponible</span>
+                            <span class="feature-badge">Respaldo automático</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="como-usar" class="how-to-use">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    🚀 <span class="gradient-text">¿Cómo empezar?</span>
+                </h2>
+                <p class="section-description">
+                    En 3 simples pasos tendrás tu caja registradora inteligente funcionando
+                </p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Obtén el bot funcionando</h3>
+                        <p>Contacta al desarrollador para configurar tu negocio. Te darán acceso con tu número de teléfono</p>
+                        <div class="step-actions">
+                            <span class="action-item">📞 Contacto directo</span>
+                            <span class="action-item">📱 Verificación por número</span>
+                            <span class="action-item">⚙️ Configuración incluida</span>
+                        </div>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Configura tu catálogo</h3>
+                        <p>El bot te guiará para configurar tus primeros productos con sus precios</p>
+                        <div class="step-examples">
+                            <div class="example">💬 "Vendo hamburguesas a 15 soles"</div>
+                            <div class="example">💬 "También vendo coca cola a 3.50"</div>
+                            <div class="example">💬 "listo"</div>
+                        </div>
+                        <div class="step-result">
+                            🎉 ¡Perfecto! Ya puedes empezar a vender
+                        </div>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>¡Empieza a vender!</h3>
+                        <p>Usa comandos súper naturales para registrar todo tu negocio</p>
+                        <div class="step-examples">
+                            <div class="example">💬 "Vendí una hamburguesa"</div>
+                            <div class="example">💬 "Vendí coca cola por yape"</div>
+                            <div class="example">💬 "¿Cuánto llevo hoy?"</div>
+                        </div>
+                        <div class="step-result">
+                            💰 Has vendido S/ 18.50 hoy (2 ventas)
+                        </div>
+                    </div>
+                    <div class="step-visual">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Examples -->
+            <div class="usage-examples">
+                <h3>💡 Comandos súper fáciles</h3>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="example-type">
+                            <i class="fas fa-cash-register"></i>
+                            <span>Para vender</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="user-input">
+                                "Vendí una hamburguesa"
+                            </div>
+                            <div class="bot-response">
+                                ✅ Venta registrada: S/ 15.00 en efectivo<br>
+                                💰 Balance actualizado: +S/ 15.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-type">
+                            <i class="fas fa-users"></i>
+                            <span>Para administrar (solo dueños)</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="user-input">
+                                "Agrega empleado Juan 51999888777"
+                            </div>
+                            <div class="bot-response">
+                                ✅ Juan puede usar el bot ahora<br>
+                                📋 Empleado agregado exitosamente<br>
+                                🔐 Permisos configurados
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-type">
+                            <i class="fas fa-search"></i>
+                            <span>Para corregir errores</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="user-input">
+                                "Buscar la venta de hamburguesa"
+                            </div>
+                            <div class="bot-response">
+                                🔍 Encontré: Hamburguesa - S/ 15.00 (10:30 AM)<br>
+                                💡 Puedes decir "modificar venta" o "eliminar venta"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-type">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Para consultar</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="user-input">
+                                "¿Cuánto vendí hoy?"
+                            </div>
+                            <div class="bot-response">
+                                📊 Has vendido S/ 245.00 hoy<br>
+                                📈 12 ventas realizadas<br>
+                                💳 Efectivo: S/ 150.00 • Yape: S/ 95.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-type">
+                            <i class="fas fa-receipt"></i>
+                            <span>Para gastos</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="user-input">
+                                "Gasté 50 soles en ingredientes"
+                            </div>
+                            <div class="bot-response">
+                                ✅ Gasto registrado: S/ 50.00 - ingredientes<br>
+                                💰 Balance actualizado: -S/ 50.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-type">
+                            <i class="fas fa-eye"></i>
+                            <span>Control de empleados</span>
+                        </div>
+                        <div class="example-content">
+                            <div class="user-input">
+                                "¿Qué vendió María hoy?"
+                            </div>
+                            <div class="bot-response">
+                                📊 María González vendió S/ 89.50 en 6 ventas<br>
+                                🕒 Última venta: 3:45 PM<br>
+                                📋 Rendimiento: Excelente
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Preview Section -->
+    <section id="reportes" class="reports-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    📄 <span class="gradient-text">Reportes Automáticos</span>
+                </h2>
+                <p class="section-description">
+                    Mira cómo se ve un reporte de cierre de caja generado automáticamente por Inti Cash Bot
+                </p>
+            </div>
+
+            <div class="report-preview-container">
+                <div class="report-info">
+                    <div class="info-card">
+                        <i class="fas fa-magic"></i>
+                        <h4>100% Automático</h4>
+                        <p>Se genera solo al final del día sin que tengas que hacer nada</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-building"></i>
+                        <h4>Con tu Logo</h4>
+                        <p>Reportes profesionales con la marca de tu negocio</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Análisis Completo</h4>
+                        <p>Balance, ventas, gastos, empleados y métodos de pago</p>
+                    </div>
+                </div>
+
+                <div class="pdf-preview">
+                    <div class="pdf-header">
+                        <h3>📋 Ejemplo de Cierre de Caja</h3>
+                        <p>Generado automáticamente el 27/06/2025</p>
+                        <button class="download-sample-btn" onclick="downloadSamplePDF()">
+                            <i class="fas fa-download"></i>
+                            Descargar PDF Ejemplo
+                        </button>
+                    </div>
+                    
+                    <div class="pdf-mockup">
+                        <div class="pdf-document">
+                            <!-- PDF Header -->
+                            <div class="pdf-doc-header">
+                                <div class="company-logo">
+                                    <div class="logo-placeholder">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <div class="company-info">
+                                        <h4>TU NEGOCIO</h4>
+                                        <p>Cierre de Caja Diario</p>
+                                    </div>
+                                </div>
+                                <div class="report-date">
+                                    <strong>27 de Junio, 2025</strong>
+                                </div>
+                            </div>
+
+                            <!-- Balance Summary -->
+                            <div class="balance-summary">
+                                <div class="balance-item positive">
+                                    <span class="label">💰 Balance Final:</span>
+                                    <span class="amount">+S/ 847.50</span>
+                                </div>
+                            </div>
+
+                            <!-- Sales Section -->
+                            <div class="pdf-section">
+                                <h5>📈 VENTAS DEL DÍA</h5>
+                                <div class="section-content">
+                                    <div class="summary-row">
+                                        <span>Total de ventas:</span>
+                                        <span class="positive">S/ 1,245.00</span>
+                                    </div>
+                                    <div class="summary-row">
+                                        <span>Número de transacciones:</span>
+                                        <span>34 ventas</span>
+                                    </div>
+                                    <div class="summary-row">
+                                        <span>Ticket promedio:</span>
+                                        <span>S/ 36.62</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payment Methods -->
+                            <div class="pdf-section">
+                                <h5>💳 MÉTODOS DE PAGO</h5>
+                                <div class="section-content">
+                                    <div class="payment-method">
+                                        <span>💵 Efectivo:</span>
+                                        <span>S/ 685.50 (55%)</span>
+                                    </div>
+                                    <div class="payment-method">
+                                        <span>📱 Yape:</span>
+                                        <span>S/ 427.00 (34%)</span>
+                                    </div>
+                                    <div class="payment-method">
+                                        <span>💳 Tarjeta:</span>
+                                        <span>S/ 132.50 (11%)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Expenses -->
+                            <div class="pdf-section">
+                                <h5>📉 GASTOS DEL DÍA</h5>
+                                <div class="section-content">
+                                    <div class="expense-item">
+                                        <span>🛒 Ingredientes:</span>
+                                        <span class="negative">-S/ 287.50</span>
+                                    </div>
+                                    <div class="expense-item">
+                                        <span>🚛 Delivery:</span>
+                                        <span class="negative">-S/ 85.00</span>
+                                    </div>
+                                    <div class="expense-item">
+                                        <span>📦 Suministros:</span>
+                                        <span class="negative">-S/ 25.00</span>
+                                    </div>
+                                    <div class="summary-row">
+                                        <span><strong>Total gastos:</strong></span>
+                                        <span class="negative"><strong>-S/ 397.50</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Employees -->
+                            <div class="pdf-section">
+                                <h5>👥 RENDIMIENTO POR EMPLEADO</h5>
+                                <div class="section-content">
+                                    <div class="employee-row">
+                                        <span>María González:</span>
+                                        <span>S/ 456.00 (18 ventas)</span>
+                                    </div>
+                                    <div class="employee-row">
+                                        <span>Juan Pérez:</span>
+                                        <span>S/ 312.50 (11 ventas)</span>
+                                    </div>
+                                    <div class="employee-row">
+                                        <span>Admin (Dueño):</span>
+                                        <span>S/ 476.50 (5 ventas)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="pdf-footer">
+                                <div class="generation-info">
+                                    <small>Generado automáticamente por Inti Cash Bot • 27/06/2025 11:59 PM</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PDF Actions -->
+                        <div class="pdf-actions">
+                            <button class="pdf-action-btn" onclick="downloadSamplePDF()">
+                                <i class="fas fa-download"></i>
+                                Descargar Ejemplo
+                            </button>
+                            <button class="pdf-action-btn" onclick="shareSamplePDF()">
+                                <i class="fas fa-share"></i>
+                                Compartir
+                            </button>
+                            <button class="pdf-action-btn" onclick="printSamplePDF()">
+                                <i class="fas fa-print"></i>
+                                Imprimir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-benefits">
+                    <h3>✨ Beneficios de los Reportes Automáticos</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Ahorra Tiempo</h4>
+                            <p>No más cálculos manuales al final del día</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Toma Mejores Decisiones</h4>
+                            <p>Ve claramente qué productos y empleados rinden más</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-check"></i>
+                            <h4>Sin Errores</h4>
+                            <p>Cálculos automáticos y precisos siempre</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-file-contract"></i>
+                            <h4>Imagen Profesional</h4>
+                            <p>Reportes con logo para contadores y bancos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    ¿Listo para <span class="gradient-text">Modernizar</span> tu Negocio?
+                </h2>
+                <p class="section-description">
+                    No más cuadernos, no más calculadoras, no más dolores de cabeza. Con Inti Cash Bot, tu caja registradora inteligente está a un mensaje de distancia.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-hero">
+                    <div class="contact-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Negocios Familiares</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15K+</div>
+                            <div class="stat-label">Ventas Registradas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Automatizado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <div class="contact-form">
+                        <div class="form-header">
+                            <h3>📞 Solicita tu Inti Cash Bot</h3>
+                            <p>Te contactaremos en menos de 24 horas. Configuración gratuita y capacitación incluida.</p>
+                        </div>
+                        
+                        <form class="demo-form" onsubmit="handleDemoRequest(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nombre del Negocio *</label>
+                                    <input type="text" name="business" placeholder="Mi Bodega San Juan" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tu Nombre *</label>
+                                    <input type="text" name="name" placeholder="Juan Pérez" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>WhatsApp *</label>
+                                    <input type="tel" name="phone" placeholder="+51 999 999 999" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipo de Negocio *</label>
+                                    <select name="business_type" required>
+                                        <option value="">Seleccionar</option>
+                                        <option value="bodega">Bodega</option>
+                                        <option value="restaurant">Restaurante</option>
+                                        <option value="tienda">Tienda de Ropa</option>
+                                        <option value="farmacia">Farmacia</option>
+                                        <option value="ferreteria">Ferretería</option>
+                                        <option value="panaderia">Panadería</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>¿Qué te interesa más? (Selecciona las que apliquen)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests" value="money">
+                                        <span class="checkmark"></span>
+                                        <span>💰 Manejo de dinero sin complicaciones</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests" value="employees">
+                                        <span class="checkmark"></span>
+                                        <span>👥 Gestión de empleados y control</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests" value="catalog">
+                                        <span class="checkmark"></span>
+                                        <span>📊 Catálogo inteligente de productos</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests" value="reports">
+                                        <span class="checkmark"></span>
+                                        <span>📄 Reportes profesionales automáticos</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>¿Cuántas ventas haces por día aproximadamente?</label>
+                                <select name="daily_sales">
+                                    <option value="">Seleccionar</option>
+                                    <option value="1-20">1-20 ventas</option>
+                                    <option value="21-50">21-50 ventas</option>
+                                    <option value="51-100">51-100 ventas</option>
+                                    <option value="100+">Más de 100 ventas</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-rocket"></i>
+                                <span>Obtener mi Inti Cash Bot</span>
+                                <div class="btn-shine"></div>
+                            </button>
+                            
+                            <p class="form-disclaimer">
+                                ✅ Configuración gratuita • ✅ Capacitación incluida • ✅ Soporte técnico por WhatsApp
+                            </p>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-alternatives">
+                        <h4>O contáctanos directamente:</h4>
+                        <div class="contact-options">
+                            <a href="https://wa.me/51999999999?text=Hola%20quiero%20información%20sobre%20Inti%20Cash%20Bot%20para%20mi%20negocio" class="contact-option whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="option-content">
+                                    <span class="option-title">WhatsApp</span>
+                                    <span class="option-subtitle">Configuración inmediata</span>
+                                </div>
+                            </a>
+                            <a href="mailto:hola@inticashbot.pe?subject=Quiero%20Inti%20Cash%20Bot%20para%20mi%20negocio" class="contact-option email">
+                                <i class="fas fa-envelope"></i>
+                                <div class="option-content">
+                                    <span class="option-title">Email</span>
+                                    <span class="option-subtitle">hola@inticashbot.pe</span>
+                                </div>
+                            </a>
+                            <a href="tel:+51999999999" class="contact-option phone">
+                                <i class="fas fa-phone"></i>
+                                <div class="option-content">
+                                    <span class="option-title">Llamar</span>
+                                    <span class="option-subtitle">Asesoría gratuita</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-hours">
+                            <i class="fas fa-clock"></i>
+                            <span>Horario de atención: Lunes a Sábado 9AM - 7PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <span class="brand-text">Inti Cash Bot</span>
+                    <p class="brand-description">
+                        Tu caja registradora inteligente para negocios familiares que quieren crecer ordenadamente
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Producto</h4>
+                        <a href="#funcionalidades">Funcionalidades</a>
+                        <a href="#como-usar">Cómo Usar</a>
+                        <a href="#pdf-viewer">Reportes PDF</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Soporte</h4>
+                        <a href="#docs">Documentación</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#contact">Contacto</a>
+                        <a href="#github">GitHub</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacidad</a>
+                        <a href="#terms">Términos</a>
+                        <a href="#license">Licencia MIT</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Inti Cash Bot. Hecho con ❤️ para pequeños y medianos empresarios que quieren crecer ordenadamente.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

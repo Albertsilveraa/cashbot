@@ -1,0 +1,24 @@
+{
+  "name": "inti-cash-bot-landing",
+  "version": "1.0.0",
+  "description": "Landing page para Inti Cash Bot - Tu caja registradora inteligente",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "telegram-bot",
+    "caja-registradora",
+    "inteligencia-artificial",
+    "negocios-familiares",
+    "punto-de-venta"
+  ],
+  "author": "Inti Cash Bot Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usuario/inti-cash-bot-landing"
+  },
+  "homepage": "https://inticashbot.vercel.app"
+} 
